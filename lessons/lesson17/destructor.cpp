@@ -26,17 +26,13 @@ Dog::~Dog(){
     std::cout << "Dog destructor called for: " << name << std::endl;
 }
 
-void some_func(){
-    Dog* p_dog = new Dog("Fluffy", "Shephard", 2);
-
-    delete p_dog;
-}
-
 
 int main(){
-    some_func();
 
-    std::cout << "Done!" << std::endl;
+    Dog dog1("Doggy1", "Shephard", 2);
+    Dog dog2("Doggy2", "Shephard", 3);
+    Dog dog3("Doggy3", "Shephard", 5);
+    Dog dog4("Doggy4", "Shephard", 1);
 
     return 0;
 }
